@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Home Page</title>
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        background: #f5f5f5;
+        font-family: Arial, sans-serif;
+    }
+
+    /* Logo */
+    .logo {
+        position: fixed;
+        top: 15px;
+        left: 15px;
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        object-fit: cover;
+        z-index: 1000;
+        border: 2px solid white;
+    }
+
+    /* Navbar */
+
+  nav {
+    height: 200px; /* Make nav taller so image can be bigger */
+    padding: 20px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    text-align: center;
+    backdrop-filter: blur(10px);
+    background-size: cover; /* Fill the nav area */
+    background-repeat: no-repeat;
+    background-position: center; /* Center the image */
+    animation: navBgChange 15s infinite;
+}
+
+/* Keyframes for nav background change */
+@keyframes navBgChange {
+    0% { background-image: url('/Users/students/Downloads/pexels-suissounet-2101187.jpg'); }
+    25% { background-image: url('/Users/students/Downloads/pexels-todd-trapani-488382-1420440.jpg'); }
+    50% { background-image: url('/Users/students/Downloads/pexels-bella-white-201200-635279.jpg'); }
+    75% { background-image: url('/Users/students/Downloads/pexels-iriser-673857.jpg'); }
+    100% { background-image: ur('/Users/students/Downloads/pexels-ken-cheung-3355734-5625298.jpg');}
+}
+
+    nav a {
+        margin: 0 15px;
+        color: #faf5f5;
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+    nav a:hover {
+        color: #4CAF50;
+    }
+
+    .header {
+        text-align: center;
+        margin-top: 120px;
+        font-size: 32px;
+        font-weight: bold;
+        color: #333;
+    }
+
+ 
+</style>
+</head>
+<body>
+
+<!-- LOGO -->
+<img src="/Users/students/Desktop/Screenshot 2025-11-28 at 5.26.43 PM.png" class="logo" alt="Logo">
+
+<!-- Navigation -->
+<nav>
+    <a href="Home.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="quotes.html">Quotes</a>
+    <a href="contact.html">Contact</a>
+</nav>
+
+<!-- Header -->
+
+
+</body>
+</html>

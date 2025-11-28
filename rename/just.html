@@ -1,72 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Spiritual Home</title>
-    <style>
-        /* Body styling */
-        body {
-            margin: 0;
-            height: 100vh;
-            font-family: Arial, sans-serif;
-            color: white;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            background-size: cover;
-            background-position: center;
-            animation: bgChange 20s infinite;
-            transition: background-image 1s ease-in-out;
-        }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Home Page</title>
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        background: #f5f5f5;
+        font-family: Arial, sans-serif;
+    }
 
-        /* Heading */
-        h1 {
-            background-color: rgba(0, 0, 0, 0.4);
-            padding: 20px 40px;
-            border-radius: 10px;
-        }
+    /* Logo */
+    .logo {
+        position: fixed;
+        top: 15px;
+        left: 15px;
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        object-fit: cover;
+        z-index: 1000;
+        border: 2px solid white;
+    }
 
-        /* Navigation */
-        nav {
-            position: absolute;
-            top: 20px;
-            width: 100%;
-            text-align: center;
-        }
+    /* Navbar */
 
-        nav a {
-            margin: 0 15px;
-            text-decoration: none;
-            color: white;
-            font-weight: bold;
-            font-size: 18px;
-        }
+  nav {
+    height: 200px; /* Make nav taller so image can be bigger */
+    padding: 20px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    text-align: center;
+    backdrop-filter: blur(10px);
+    background-size: cover; /* Fill the nav area */
+    background-repeat: no-repeat;
+    background-position: center; /* Center the image */
+    animation: navBgChange 15s infinite;
+}
 
-        nav a:hover {
-            text-decoration: underline;
-        }
+/* Keyframes for nav background change */
+@keyframes navBgChange {
+    0% { background-image: url('/Users/students/Downloads/pexels-suissounet-2101187.jpg'); }
+    25% { background-image: url('/Users/students/Downloads/pexels-todd-trapani-488382-1420440.jpg'); }
+    50% { background-image: url('/Users/students/Downloads/pexels-bella-white-201200-635279.jpg'); }
+    75% { background-image: url('/Users/students/Downloads/pexels-iriser-673857.jpg'); }
+    100% { background-image: ur('/Users/students/Downloads/pexels-ken-cheung-3355734-5625298.jpg');}
+}
 
-        /* Background animation */
-        @keyframes bgChange {
-            0% { background-image: url('https://raw.githubusercontent.com/parinarai-crypto/My-website/main/rename/pexels-ahorablue-1042206.jpg'); }
-            25% { background-image: url('https://raw.githubusercontent.com/parinarai-crypto/My-website/main/rename/pexels-eberhardgross-1670187.jpg'); }
-            50% { background-image: url('https://raw.githubusercontent.com/parinarai-crypto/My-website/main/rename/pexels-nandhukumar-312839.jpg'); }
-            75% { background-image: url('https://raw.githubusercontent.com/parinarai-crypto/My-website/main/rename/pexels-nandhukumar-312839.jpg'); }
-            100% { background-image: url('https://raw.githubusercontent.com/parinarai-crypto/My-website/main/rename/pexels-quang-nguyen-vinh-222549-2166695.jpg'); }
-        }
-    </style>
+    nav a {
+        margin: 0 15px;
+        color: #faf5f5;
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+    nav a:hover {
+        color: #4CAF50;
+    }
+
+    .header {
+        text-align: center;
+        margin-top: 120px;
+        font-size: 32px;
+        font-weight: bold;
+        color: #333;
+    }
+
+ 
+</style>
 </head>
 <body>
 
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="contact.html">Contact</a>
-    </nav>
+<!-- LOGO -->
+<img src="/Users/students/Desktop/Screenshot 2025-11-28 at 5.26.43 PM.png" class="logo" alt="Logo">
 
-    <h1>Welcome to Your Space of Peace</h1>
+<!-- Navigation -->
+<nav>
+    <a href="Home.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="quotes.html">Quotes</a>
+    <a href="contact.html">Contact</a>
+</nav>
+
+<!-- Header -->
+
 
 </body>
 </html>

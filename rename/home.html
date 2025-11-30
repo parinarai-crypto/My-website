@@ -4,89 +4,211 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Home Page</title>
+
 <style>
-    body {
-        margin: 0;
-        padding: 0;
-        background: #f5f5f5;
-        font-family: Arial, sans-serif;
-    }
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
 
-    /* Logo */
-    .logo {
-        position: fixed;
-        top: 15px;
-        left: 15px;
-        width: 60px;
-        height: 60px;
-        border-radius: 50%;
-        object-fit: cover;
-        z-index: 1000;
-        border: 2px solid white;
-    }
-
-    /* Navbar */
-
-  nav {
-    height: 200px; /* Make nav taller so image can be bigger */
-    padding: 20px;
+/* Logo */
+.logo {
     position: fixed;
-    top: 0;
+    top: 15px;
+    left: 15px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    z-index: 1000;
+    border: 2px solid white;
+}
+
+/* Header with background image and top links */
+header {
+    position: relative;
+    height: 200px;
     width: 100%;
+    background-size: cover;
+    background-position: center;
+    animation: bgSlide 15s infinite;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-shadow: 1px 1px 4px rgba(0,0,0,0.5);
+}
+
+@keyframes bgSlide {
+    0% { background-image: url('https://raw.githubusercontent.com/parinarai-crypto/My-website/main/Picture%20for%20home/pexels-suissounet-2101187.jpg'); }
+    25% { background-image: url('https://raw.githubusercontent.com/parinarai-crypto/My-website/main/Picture%20for%20home/pexels-todd-trapani-488382-1420440.jpg'); }
+    50% { background-image: url('https://raw.githubusercontent.com/parinarai-crypto/My-website/main/Picture%20for%20home/pexels-ssasanka-2240000.jpg'); }
+    75% { background-image: url('https://raw.githubusercontent.com/parinarai-crypto/My-website/main/Picture%20for%20home/pexels-bella-white-201200-635279.jpg'); }
+    100% { background-image: url('https://raw.githubusercontent.com/parinarai-crypto/My-website/main/Picture%20for%20home/pexels-iriser-673857.jpg'); }
+}
+
+/* Top links inside header */
+nav.top-nav {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 10px;
+}
+
+nav.top-nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.7);
+}
+
+nav.top-nav a:hover {
+    color: #4CAF50;
+}
+
+/* Layout */
+.container {
+    display: flex;
+}
+
+/* Sidebar links */
+.sidebar {
+    width: 220px;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    position: fixed;
+    top: 200px; /* start below header */
+    left: 0;
+}
+
+.sidebar a {
+    color: black;
+    text-decoration: none;
+    padding: 12px 20px;
+    display: block;
+    font-weight: bold;
+}
+
+.sidebar a:hover {
+    color: #4CAF50;
+}
+
+/* Main content */
+.main {
+    margin-left: 220px; /* space for sidebar */
+    padding: 20px;
+    margin-top: 200px; /* below header */
+}
+
+/* Exercise cards */
+.exercise-container {
+    display: flex;           /* horizontal layout */
+    flex-wrap: wrap;         /* wrap to next line if needed */
+    gap: 20px;
+    margin-top: 10px;        /* space from section above */
+}
+
+.exercise-card {
+    width: 300px;
+    height: 320px;           /* total card height */
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
     text-align: center;
-    backdrop-filter: blur(10px);
-    background-size: cover; /* Fill the nav area */
-    background-repeat: no-repeat;
-    background-position: center; /* Center the image */
-    animation: navBgChange 15s infinite;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
 }
 
-/* Keyframes for nav background change */
-@keyframes navBgChange {
-    0% { background-image: url('https://github.com/parinarai-crypto/My-website/blob/main/Picture%20for%20home/pexels-suissounet-2101187.jpg'); }
-    25% { background-image: url('https://github.com/parinarai-crypto/My-website/blob/main/Picture%20for%20home/pexels-todd-trapani-488382-1420440.jpg'); }
-    50% { background-image: url('https://github.com/parinarai-crypto/My-website/blob/main/Picture%20for%20home/pexels-ssasanka-2240000.jpg'); }
-    75% { background-image: url('https://github.com/parinarai-crypto/My-website/blob/main/Picture%20for%20home/pexels-bella-white-201200-635279.jpg'); }
-    100% { background-image: ur('https://github.com/parinarai-crypto/My-website/blob/main/Picture%20for%20home/pexels-iriser-673857.jpg');}
+.exercise-card img {
+    width: 100%;
+    height: 200px;           /* top half of card */
+    object-fit: cover;       /* fill space without stretching */
+    border-radius: 8px 8px 0 0; /* round top corners */
 }
 
-    nav a 
-        margin: 0 15px;
-        color: #faf5f5;
-        text-decoration: none;
-        font-weight: bold;
-    }
+.exercise-card p {
+    margin: 10px;            /* spacing below image */
+    font-weight: bold;
+    color: #333;
+}
 
-    nav a:hover {
-        color: #4CAF50;
-    }
-
-    .header {
-        text-align: center;
-        margin-top: 120px;
-        font-size: 32px;
-        font-weight: bold;
-        color: #333;
-    }
-
- 
+/* Section styling */
+section {
+    margin-top: 10px;
+    text-align: center;
+    color: #1b1a1a;
+    font-size: 18px;
+}
 </style>
 </head>
 <body>
 
-<!-- LOGO -->
-<img src="/Users/students/Desktop/Screenshot 2025-11-28 at 5.26.43 PM.png" class="logo" alt="Logo">
+<!-- Logo -->
+<a href="Home.html">
+    <img src="https://raw.githubusercontent.com/parinarai-crypto/My-website/main/Picture%20for%20home/FullLogo.jpg" class="logo" alt="Logo">
+</a>
 
-<!-- Navigation -->
-<nav>
-    <a href="Home.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="quotes.html">Quotes</a>
-    <a href="contact.html">Contact</a>
-</nav>
+<!-- Header with background image -->
+<header>
+    <!-- Top links inside header -->
+    <nav class="top-nav">
+        <a href="Home.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+</header>
 
-<!-- Header -->
+<!-- Section -->
+<section>
+    <h2>Explore and Be Healthy</h2>
+    <p>Be yourself and believe in yourself.</p>
+</section>
 
+<div class="container">
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <a href="/hotels">🏨 Hotels & Homes</a>
+        <a href="/flights">✈️ Flights</a>
+        <a href="/flighthotel">✈️➕🏨 Flight + Hotel</a>
+        <a href="/cars">🚗 Cars</a>
+        <a href="/attractions">🎢 Attractions & Tours</a>
+        <a href="/cruises">🚢 Cruises</a>
+        <a href="/tripplanner">🔄 Trip.Planner <span style="color:red; font-size:0.8em;">New</span></a>
+        <a href="/inspiration">📍 Travel Inspiration</a>
+        <a href="/map">🗺️ Map</a>
+        <a href="/rewards">🎁 Rewards</a>
+        <a href="/app">📱 App</a>
+    </div>
+
+    <!-- Main content -->
+    <div class="main">
+        <div class="exercise-container">
+            <div class="exercise-card">
+                <a href="Belly.html">
+                    <img src="https://raw.githubusercontent.com/parinarai-crypto/My-website/main/Picture%20for%20home/pexels-towfiqu-barbhuiya-3440682-11773868.jpg" alt="Belly Fat">
+                </a>
+                <p>Exercise to lose belly Fat</p>
+            </div>
+            <div class="exercise-card">
+                <a href="Arms.html">
+                    <img src="https://raw.githubusercontent.com/parinarai-crypto/My-website/main/Picture%20for%20home/arms.jpg" alt="Arms">
+                </a>
+                <p>Exercise for Arms</p>
+            </div>
+            <div class="exercise-card">
+                <a href="Legs.html">
+                    <img src="https://raw.githubusercontent.com/parinarai-crypto/My-website/main/Picture%20for%20home/legs.jpg" alt="Legs">
+                </a>
+                <p>Exercise for Legs</p>
+            </div>
+        </div>
+    </div>
+</div>
 
 </body>
 </html>

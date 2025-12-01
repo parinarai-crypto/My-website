@@ -83,6 +83,7 @@ nav.top-nav a:hover {
     position: fixed;
     top: 200px; /* start below header */
     left: 0;
+    margin-right: 5 px;
 }
 
 .sidebar a {
@@ -105,51 +106,59 @@ nav.top-nav a:hover {
 }
 
 /* Exercise cards */
+/* Section styling */
 .exercise-container {
-    display: flex;           /* horizontal layout */
-    flex-wrap: wrap;         /* wrap to next line if needed */
-    gap: 20px;
-    margin-top: 10px;        /* space from section above */
+   display: flex;           /* horizontal layout */
+   flex-wrap: wrap;         /* wrap to next line if needed */
+   gap: 10px;
+   margin-top: 0px;        /* space from section above */
 }
+
 
 .exercise-card {
-    width: 300px;
-    height: 320px;           /* total card height */
-    background-color: #ffffff;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    overflow: hidden;
+   width: 290px;
+   height: 320px;           /* total card height */
+   background-color: #ffffff;
+   border-radius: 10px;
+   box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+   text-align: center;
+   display: flex;
+   flex-direction: column;
+   overflow: hidden;
 }
+
 
 .exercise-card img {
-    width: 100%;
-    height: 200px;           /* top half of card */
-    object-fit: cover;       /* fill space without stretching */
-    border-radius: 8px 8px 0 0; /* round top corners */
+   width: 100%;
+   height: 200px;           /* top half of card */
+   object-fit: cover;       /* fill space without stretching */
+   border-radius: 8px 8px 0 0; /* round top corners */
 }
 
+
 .exercise-card p {
-    margin: 10px;            /* spacing below image */
-    font-weight: bold;
-    color: #333;
+   margin: 10px;            /* spacing below image */
+   font-weight: bold;
+   color: #333;
 }
+
 
 /* Section styling */
 section {
-    margin-top: 10px;
-    text-align: center;
-    color: #1b1a1a;
-    font-size: 18px;
+   margin-top: 0px;
+   text-align: left;
+   color: #1b1a1a;
+   font-size: 18px;
+   margin-left: 5 px;
 }
+
+
 </style>
 </head>
 <body>
 
 <!-- Logo -->
-<a href="Home.html">
+<a href="jus.html">
     <img src="https://raw.githubusercontent.com/parinarai-crypto/My-website/main/Picture%20for%20home/FullLogo.jpg" class="logo" alt="Logo">
 </a>
 
@@ -190,22 +199,36 @@ section {
         <div class="exercise-container">
             <div class="exercise-card">
                 <a href="Belly.html">
-                    <img src="https://raw.githubusercontent.com/parinarai-crypto/My-website/main/Picture%20for%20home/pexels-towfiqu-barbhuiya-3440682-11773868.jpg" alt="Belly Fat">
-                </a>
-                <p>Exercise to lose belly Fat</p>
+                   <img src="https://raw.githubusercontent.com/parinarai-crypto/My-website/main/Picture%20for%20home/Picture%20of%20places%201/Santorini.jpg" alt="Santorini"></a>
+                <p style="font-size: 20px; line-height: 10px; text-align: left;">Santorini</p>
+                <p style="line-height: 10px; text-align: left;">Greece , Sunset View 🌅</p> 
             </div>
             <div class="exercise-card">
                 <a href="Arms.html">
-                    <img src="https://raw.githubusercontent.com/parinarai-crypto/My-website/main/Picture%20for%20home/arms.jpg" alt="Arms">
+                    <img src="https://raw.githubusercontent.com/parinarai-crypto/My-website/main/Picture%20for%20home/For%20city%20picture/Paris.jpg
+                    " alt="Arms">
                 </a>
-                <p>Exercise for Arms</p>
+                <p style="font-size: 20px; line-height: 10px; text-align: left;">Paris</p>
+                <p style="line-height: 10px; text-align: left;">France , City View 🌃</p> 
             </div>
             <div class="exercise-card">
-                <a href="Legs.html">
-                    <img src="https://raw.githubusercontent.com/parinarai-crypto/My-website/main/Picture%20for%20home/legs.jpg" alt="Legs">
+                <a href="City.html">
+                    <img src="https://raw.githubusercontent.com/parinarai-crypto/My-website/main/Picture%20for%20home/Ocean/Bora%20Bora.jpg
+                    " alt="Legs">
                 </a>
-                <p>Exercise for Legs</p>
+                <p style="font-size: 20px; line-height: 10px; text-align: left;">Bora Bora</p>
+                <p style="line-height: 10px; text-align: left;">French Polynesia , Ocean View 🌊</p> 
             </div>
+            <div class="exercise-card">
+                <a href="Mountain.html">
+                    <img src="https://raw.githubusercontent.com/parinarai-crypto/My-website/main/Picture%20for%20home/Mountain/Mout%20Fuji.jpg
+                     " alt="Mountain">
+                </a>
+                <p style="font-size: 20px; line-height: 10px; text-align: left;">Mout Fuji</p>
+                <p style="line-height: 10px; text-align: left;">Japan, Mountain View ⛰️</p> 
+            </div>
+
+        
         </div>
     </div>
 </div>

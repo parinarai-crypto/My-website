@@ -83,12 +83,11 @@ nav.top-nav a:hover {
     position: fixed;
     top: 200px; /* start below header */
     left: 0;
-    margin-right: 5 px;
 }
 
 .sidebar a {
     color: black;
-    text-decoration: dotted;
+    text-decoration: none;
     padding: 12px 20px;
     display: block;
     font-weight: bold;
@@ -102,48 +101,44 @@ nav.top-nav a:hover {
 .main {
     margin-left: 220px; /* space for sidebar */
     padding: 20px;
-    margin-top: 0px; /* below header */
+    margin-top: 0px; 
 }
 
-/* Exercise cards */
-/* Section styling */
+/* Exercise cards container */
 .exercise-container {
    display: flex;           /* horizontal layout */
    flex-wrap: wrap;         /* wrap to next line if needed */
-   gap: 10px;
-   margin-top: 0px;        /* space from section above */
+   gap: 20px;
+   margin-top: 20px;
 }
 
-
+/* Exercise cards */
 .exercise-card {
    width: 290px;
-   height: 320px;           /* total card height */
+   height: 320px;
    background-color: #ffffff;
    border-radius: 10px;
    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-   text-align: center;
+   text-align: left;
    display: flex;
    flex-direction: column;
    overflow: hidden;
 }
 
-
 .exercise-card img {
    width: 100%;
-   height: 200px;           /* top half of card */
-   object-fit: cover;       /* fill space without stretching */
-   border-radius: 8px 8px 0 0; /* round top corners */
+   height: 200px;
+   object-fit: cover;
+   border-radius: 8px 8px 0 0;
 }
-
 
 .exercise-card p {
-   margin: 10px;            /* spacing below image */
+   margin: 5px 10px;
    font-weight: bold;
    color: #333;
+   line-height: 1.2;
 }
 
-
-/* Section styling */
 section {
    margin-top: 0px;
    text-align: left;
@@ -151,7 +146,6 @@ section {
    font-size: 18px;
    margin-bottom: 0;
 }
-
 
 </style>
 </head>
@@ -164,7 +158,6 @@ section {
 
 <!-- Header with background image -->
 <header>
-    <!-- Top links inside header -->
     <nav class="top-nav">
         <a href="Home.html">Home</a>
         <a href="about.html">About</a>
@@ -172,88 +165,53 @@ section {
     </nav>
 </header>
 
-<!-- Section -->
 <section>
-    <pre>                   
-        <h2>                Explore and Be Healthy</h2>
-        <p>                         Be yourself and believe in yourself.</p>
-        <style>
-            h2{
-                margin: 0;
-            }
-            p{
-                margin: 0;
-            }
-        </style>
-    </pre>
-
+    <h2 style="margin: 0; text-align:center;">Explore and Be Healthy</h2>
+    <p style="margin: 0; text-align:center;">Be yourself and believe in yourself.</p>
 </section>
 
 <div class="container">
     <!-- Sidebar -->
     <div class="sidebar">
         <a href="Sunset.html">Sunset</a>
-        <a href="Cities.html"> Cities</a>
+        <a href="Cities.html">Cities</a>
         <a href="Ocean.html">Ocean</a>
         <a href="Mountain.html">Mountain</a>
         <a href="Forest.html">Forest</a>
         <a href="Flower.html">Flower Garden</a>
-        
-
-        
     </div>
 
     <!-- Main content -->
     <div class="main">
         <div class="exercise-container">
             <div class="exercise-card">
-                <a href="sunset.html">
-                   <img src="https://raw.githubusercontent.com/parinarai-crypto/My-website/main/Picture%20for%20home/Picture%20of%20places%201/Santorini.jpg" alt="Santorini"></a>
-                <p style="font-size: 20px; line-height: 10px; text-align: left;">Santorini</p>
-                <p style="line-height: 10px; text-align: left;">Greece , Sunset View 🌅</p> 
-            </div>
-            <div class="exercise-card">
-                <a href="cities.html">
-                    <img src="https://raw.githubusercontent.com/parinarai-crypto/My-website/main/Picture%20for%20home/For%20city%20picture/Paris.jpg
-                    " alt="Arms">
-                </a>
-                <p style="font-size: 20px; line-height: 10px; text-align: left;">Paris</p>
-                <p style="line-height: 10px; text-align: left;">France , City View 🌃</p> 
-            </div>
-            <div class="exercise-card">
-                <a href="Ocean.html">
-                    <img src="https://raw.githubusercontent.com/parinarai-crypto/My-website/main/Picture%20for%20home/Ocean/Bora%20Bora.jpg
-                    " alt="Ocean">
-                </a>
-                <p style="font-size: 20px; line-height: 10px; text-align: left;">Bora Bora</p>
-                <p style="line-height: 10px; text-align: left;">French Polynesia , Ocean View 🌊</p> 
-            </div>
-            <div class="exercise-card">
-                <a href="Mountain.html">
-                    <img src="https://raw.githubusercontent.com/parinarai-crypto/My-website/main/Picture%20for%20home/Mountain/Mout%20Fuji.jpg
-                     " alt="Mountain">
-                </a>
-                <p style="font-size: 20px; line-height: 10px; text-align: left;">Mout Fuji</p>
-                <p style="line-height: 10px; text-align: left;">Japan, Mountain View ⛰️</p> 
-            </div>
-            <div class="exercise-card">
-                <a href="Forest.html">
-                    <img src="https://raw.githubusercontent.com/parinarai-crypto/My-website/main/Picture%20for%20home/forest/Zhangjiajie.jpg" alt="Mountain">
-                </a>
-                <p style="font-size: 20px; line-height: 10px; text-align: left;">Zhangjiajie</p>
-                <p style="line-height: 10px; text-align: left;">China, Forest View🏞</p> 
-            </div>
-            <div class="exercise-card">
-                <a href="Garden.html">
+                <a href="https://www.pinterest.com/search/pins/?q=Keukenhof&rs=typed">
                     <img src="https://raw.githubusercontent.com/parinarai-crypto/My-website/main/Picture%20for%20home/flower%20Gardens/etherlands'%20Keukenhof%20Gardens%20.jpg" alt="Flower Garden">
                 </a>
-                <p style="font-size: 20px; line-height: 10px; text-align: left;">Keukenhof</p>
-                <p style="line-height: 10px; text-align: left;">Netherlands, Flower Garden View🌷</p> 
+                <p style="font-size: 20px;">Keukenhof</p>
+                <p>Netherlands, Flower Garden View🌷</p> 
             </div>
-
-        
-
-        
+            <div class="exercise-card">
+                <a href="https://www.pinterest.com/search/pins/?q=Lavender%20field%20France&rs=typed">
+                    <img src="https://raw.githubusercontent.com/parinarai-crypto/My-website/main/Picture%20for%20home/flower%20Gardens/Provence%20in%20France%20(lavender).jpg" alt="Lavender Field">
+                </a>
+                <p style="font-size: 20px;">Lavender Field</p>
+                <p>France, Flower Garden 🌸</p> 
+            </div>
+            <div class="exercise-card">
+                <a href="https://www.pinterest.com/search/pins/?q=Butchart%20Gardens&rs=typed">
+                    <img src="https://raw.githubusercontent.com/parinarai-crypto/My-website/main/Picture%20for%20home/flower%20Gardens/Butchart%20Gardens.jpg" alt="Butchart Gardens">
+                </a>
+                <p style="font-size: 20px;">Butchart Gardens</p>
+                <p>Canada, Flower Garden 🌺</p> 
+            </div>
+            <div class="exercise-card">
+                <a href="https://www.pinterest.com/search/pins/?q=Giverny&rs=typed">
+                    <img src="https://raw.githubusercontent.com/parinarai-crypto/My-website/main/Picture%20for%20home/flower%20Gardens/Giverny.jpg" alt="Giverny">
+                </a>
+                <p style="font-size: 20px;">Giverny</p>
+                <p>France, Flower Garden 🌼</p> 
+            </div>
         </div>
     </div>
 </div>
